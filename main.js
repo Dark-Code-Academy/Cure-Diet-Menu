@@ -456,6 +456,7 @@ function submit () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم السبت )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -479,6 +480,7 @@ function submit_new1 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الاحد )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -502,6 +504,7 @@ function submit_new2 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الاثنين )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -525,6 +528,7 @@ function submit_new3 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الثلاثاء )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -548,6 +552,7 @@ function submit_new4 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الاربعاء )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -571,6 +576,7 @@ function submit_new5 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الخميس )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -596,6 +602,7 @@ function submit_new6 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الجمعة )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -618,6 +625,7 @@ function keto1 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم السبت )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -640,6 +648,7 @@ function keto2 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الاحد )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -664,6 +673,7 @@ function keto3 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الاثنين )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -689,6 +699,7 @@ function keto4 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الثلاثاء )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -712,6 +723,7 @@ function keto5 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الاربعاء )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -734,6 +746,7 @@ function keto6 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الخميس )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -757,6 +770,7 @@ function sugar1 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم السبت )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -780,6 +794,7 @@ function sugar2 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الاحد )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -803,6 +818,7 @@ function sugar3 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الاثنين )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -826,6 +842,7 @@ function sugar4 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الثلاثاء )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -849,6 +866,7 @@ function sugar5 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الاربعاء )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -872,6 +890,7 @@ function sugar6 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الخميس )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
@@ -895,6 +914,7 @@ function sugar7 () {
 
 
     var url = "https://wa.me/" + phone_numper + "?text="
+    +"( يوم الجمعة )" + "%0a"
     +"الفطار : " + breakf + "%0a"
     +"الغداء : " + lanch + "%0a"
     +"العشاء : " + dinner + "%0a"
