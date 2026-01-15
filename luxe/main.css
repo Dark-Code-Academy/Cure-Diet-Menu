@@ -1,3 +1,10 @@
+* {
+  text-decoration: none !important;
+}
+
+
+
+
 :root {
     --border-radius: 4px;
     --color-primary: #ed2e2e;
@@ -4713,5 +4720,27 @@ open-menue {
 
 }
 .footer a {
-color: #0f172a;}
+color: #0f172a;
+}
+.footer p {
+margin-top: 15px;
+}
+.form-select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
+
+
+
+
+.slider-img {
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .slider-img {
+    height: 200px;
+  }
+}
