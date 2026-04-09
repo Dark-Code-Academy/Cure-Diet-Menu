@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم كيور دايت</title>
+     <link rel="stylesheet" type="text/css" href="vendor/mckenziearts/laravel-notify/dist/notify.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;display=swap"> 
+    <link rel="stylesheet" href="custom/css/select2.min.css">
+    <link rel="stylesheet" href="luxe/bootstrap_customized.min.css">
+    
+    <link rel="icon" type="image/png" href="images/logo2.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo2.jpg">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/logo2.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo2.jpg">
+    <link rel="manifest" href="images/logo2.jpg">
+    <link rel="mask-icon" href="images/logo2.jpg" color="#5bbad5">
+</head>
+<body>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* الحاوية */
+.table-container {
+    width: 95%;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow-x: auto;
+}
+
+/* زر حذف الكل */
+#deleteAllBtn {
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#deleteAllBtn:hover {
+    background: #e55a5a;
+}
+
+/* الجدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+/* الهيدر */
+thead th {
+    background: #4a90e2;
+    color: #fff;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+
+/* ألوان هادية لكل الأعمدة */
+tbody td:nth-child(1) { background: #f0f6ff; }
+tbody td:nth-child(2) { background: #f5f9ff; }
+tbody td:nth-child(3) { background: #f7fbff; }
+tbody td:nth-child(4) { background: #fff8f2; }
+tbody td:nth-child(5) { background: #fffaf5; }
+tbody td:nth-child(6) { background: #f9f5ff; }
+tbody td:nth-child(7) { background: #f3fbf9; }
+tbody td:nth-child(8) { background: #f7fff7; }
+
+/* الصفوف */
+tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background: #eef5ff;
+    transition: 0.2s;
+}
+
+/* زر حذف */
+button.delete-btn {
+    background: #ff6b6b;
+    border: none;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button.delete-btn:hover {
+    background: #e55a5a;
+}
+
+
+</style>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container my-4">
+
+    <div class="row">
+        <div class="col-12">
+
+            <div class="table-container p-3 bg-white shadow rounded">
+
+                <!-- زر حذف الكل -->
+                <div class="row mb-3">
+                    <div class="col-12 col-md-4">
+                        <button id="deleteAllBtn" class="btn btn-danger w-100">
+                            🗑 حذف الكل
+                        </button>
+                    </div>
+                </div>
+
+                <!-- الجدول -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            
+                            <table class="table table-bordered table-hover text-center align-middle">
+                                
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>اليوم</th>
+                                        <th>التاريخ</th>
+                                        <th>الاسم</th>
+                                        <th>الفطار</th>
+                                        <th>الغداء</th>
+                                        <th>العشاء</th>
+                                        <th>اسناك</th>
+                                        <th>سلطة</th>
+                                        <th>حذف</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="ordersTable"></tbody>
+
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+function loadOrders() {
+    var orders = JSON.parse(localStorage.getItem("orders")) || [];
+    var table = document.getElementById("ordersTable");
+    table.innerHTML = "";
+
+    orders.forEach((order, index) => {
+        var row = `
+            <tr>
+                <td>${order.day}</td>
+                <td>${order.date}</td>
+                <td>${order.name}</td>
+                <td>${order.breakf}</td>
+                <td>${order.lanch}</td>
+                <td>${order.dinner}</td>
+                <td>${order.snack}</td>
+                <td>${order.salad}</td>
+                <td>
+                    <button class="delete-btn" onclick="deleteOrder(${index})">🗑</button>
+                </td>
+            </tr>
+        `;
+        table.innerHTML += row;
+    });
+}
+
+function deleteOrder(index) {
+    var orders = JSON.parse(localStorage.getItem("orders")) || [];
+    if (confirm("هل أنت متأكد من حذف الطلب؟")) {
+        orders.splice(index, 1);
+        localStorage.setItem("orders", JSON.stringify(orders));
+        loadOrders();
+    }
+}
+
+function deleteAllOrders() {
+    if (confirm("هل أنت متأكد من حذف كل الطلبات؟")) {
+        localStorage.removeItem("orders");
+        loadOrders();
+    }
+}
+
+document.getElementById("deleteAllBtn").addEventListener("click", deleteAllOrders);
+
+loadOrders();
+</script>
+    <script src="luxe/jquery.min.js"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
+<script src="custom/js/select2.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="luxe/bootstrap.bundle.min.js"></script>
+<script src="luxe/cartFunctions.js"></script>
+<script src="luxe/order.js"></script>
+
+<script src="custom/js/js.js"></script>
+</body>
+</html>
