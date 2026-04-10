@@ -121,8 +121,8 @@
       <nav id='place-menu'>
         <div class='item'><a href='#subsection-855'> 1 المنيو المتوازن</a></div>
         <div class='item'><a href='#subsection-856'> 2 المنيو المتوازن</a></div>
-        <!-- <div class='item'><a href='#subsection-857'>منيو الكيتو دايت</a></div> -->
-        <!-- <div class='item'><a href='#subsection-850'>منيو السكري</a></div> -->
+        <div class='item'><a href='#subsection-857'>منيو الكيتو دايت</a></div>
+        <div class='item'><a href='#subsection-850'>منيو السكري</a></div>
       </nav>
       <!-- input خارج nav -->
       <input 
@@ -368,7 +368,7 @@
                                                  
                                         </div>
                                                <div class="select">
-                                                <button class="button-select"onclick="n1()">select</button>
+                                                <button class="button-select"onclick="submit()">select</button>
                                             </div>
                                     <div id='subsection-855' class='box-info'>
                                         <div class='head'>
@@ -539,7 +539,7 @@
 </div>
 </div>
                                                   <div class="select">
-                                                <button class="button-select"onclick="n2()">select</button>
+                                                <button class="button-select"onclick="submit_new1()">select</button>
                                             </div>
                                     <div id='subsection-855' class='box-info'>
                                         <div class='head'>
@@ -708,7 +708,7 @@
                                                   </div>
                                         </div>
                                          <div class="select">
-                                                <button class="button-select"onclick="n3()">select</button>
+                                                <button class="button-select"onclick="submit_new2()">select</button>
                                             </div>
                                     <div id='subsection-855' class='box-info'>
                                         <div class='head'>
@@ -877,7 +877,7 @@
                                                     
                                              </div>
                                          <div class="select">
-                                                <button class="button-select"onclick="n4()">select</button>
+                                                <button class="button-select"onclick="submit_new3()">select</button>
                                             </div>
                                     <div id='subsection-855' class='box-info'>
                                         <div class='head'>
@@ -1044,7 +1044,7 @@
 </div>
                                                    </div>
                                          <div class="select">
-                                                <button class="button-select"onclick="n5()">select</button>
+                                                <button class="button-select"onclick="submit_new4()">select</button>
                                             </div>
                                     <div id='subsection-855' class='box-info'>
                                         <div class='head'>
@@ -1211,7 +1211,7 @@
 </div>
                                                  </div>
                                          <div class="select">
-                                                <button class="button-select"onclick="n6()">select</button>
+                                                <button class="button-select"onclick="submit_new5()">select</button>
                                             </div>
                                     <div id='subsection-855' class='box-info'>
                                         <div class='head'>
@@ -1378,7 +1378,7 @@
 </div>
                                                      </div>
                                          <div class="select">
-                                                <button class="button-select"onclick="n7()">select</button>
+                                                <button class="button-select"onclick="submit_new6()">select</button>
                                             </div>
                                     <div id='subsection-856' class='box-info'>
                                         <div class='head'>
@@ -1395,7 +1395,7 @@
 <div class="container mt-3">
   <div class="row ">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="break">
+      <select class="form-select custom-select" id="n1-break">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="ساندوتش فول بالخلطة العربية">ساندوتش فول بالخلطة العربية</option>
 <option value="ساندوتش حلوم مشوي">ساندوتش حلوم مشوي</option>
@@ -1425,7 +1425,7 @@
  <div class="container mt-3">
   <div class="row ">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="lanch">
+      <select class="form-select custom-select" id="n1-lunch">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="سمك مشوي بصوص الفلفل الحلو مع عيش بني">سمك مشوي بصوص الفلفل الحلو مع عيش بني</option>
 <option value="تورلي لحم بالخضروات مع عيش">تورلي لحم بالخضروات مع عيش</option>
@@ -1455,7 +1455,7 @@
  <div class="container mt-3">
   <div class="row ">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="dinner">
+      <select class="form-select custom-select" id="n1-dinner">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="باستا ريد صوص باللحم">باستا ريد صوص باللحم</option>
 <option value="تشيكن فاهيتا مع بطاطا زعتر">تشيكن فاهيتا مع بطاطا زعتر</option>
@@ -1485,7 +1485,7 @@
     <div class="container mt-3">
     <div class="row ">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="snack">
+      <select class="form-select custom-select" id="n1-snack">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="كيكة زعفران">كيكة زعفران</option>
 <option value="تشيز كيك شوكولاتة">تشيز كيك شوكولاتة</option>
@@ -1515,7 +1515,7 @@
  <div class="container mt-3">
 <div class="row ">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="salad">
+      <select class="form-select custom-select" id="n1-salad">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="سلطة سيزر دجاج">سلطة سيزر دجاج</option>
 <option value="سلطة شرقية">سلطة شرقية</option>
@@ -1540,7 +1540,7 @@
                                                  
                                         </div>
                                                <div class="select">
-                                                <button class="button-select"onclick="submit()">select</button>
+                                                <button class="button-select"onclick="n1()">select</button>
                                             </div>
                                     <div id='subsection-856' class='box-info'>
                                         <div class='head'>
@@ -1556,7 +1556,7 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new1-break">
+      <select class="form-select custom-select" id="n2-break">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="توست فلافل مع اللبنة">توست فلافل مع اللبنة</option>
 <option value="أومليت بالخضروات">أومليت بالخضروات</option>
@@ -1586,7 +1586,7 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new1-lanch">
+      <select class="form-select custom-select" id="n2-lanch">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="كفتة مشوية مع أرز الزعفران والخضار">كفتة مشوية مع أرز الزعفران والخضار</option>
 <option value="باستا روبيان">باستا روبيان</option>
@@ -1616,7 +1616,7 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new1-dinner">
+      <select class="form-select custom-select" id="n2-dinner">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="برجر لحم مشوي مع الخضار">برجر لحم مشوي مع الخضار</option>
 <option value="ساندوتش دجاج مشوي بالخس">ساندوتش دجاج مشوي بالخس</option>
@@ -1647,7 +1647,7 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new1-snack">
+      <select class="form-select custom-select" id="n2-snack">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="براوني شوكولاتة">براوني شوكولاتة</option>
 <option value="تارت فواكه">تارت فواكه</option>
@@ -1679,7 +1679,7 @@
   <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new1-salad">
+      <select class="form-select custom-select" id="n2-salad">
        <option value="0" selected disabled>اختر الوجبة </option> 
        <option value="شوربة كريمة الدجاج">شوربة كريمة الدجاج</option>
                                                        
@@ -1702,7 +1702,7 @@
 </div>
 </div>
                                                   <div class="select">
-                                                <button class="button-select"onclick="submit_new1()">select</button>
+                                                <button class="button-select"onclick="n2()">select</button>
                                             </div>
                                     <div id='subsection-856' class='box-info'>
                                         <div class='head'>
@@ -1716,7 +1716,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new2-break">
+      <select class="form-select custom-select" id="n3-break">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="حمسة سجق راب">حمسة سجق راب</option>
 <option value="عجة بيض رول">عجة بيض رول</option>
@@ -1746,7 +1746,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new2-lanch">
+      <select class="form-select custom-select" id="n3-lanch">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="دجاج بمرق الملوخية">دجاج بمرق الملوخية</option>
 <option value="صيادية سمك">صيادية سمك</option>
@@ -1776,7 +1776,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new2-dinner">
+      <select class="form-select custom-select" id="n3-dinner">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="بيتزا خضروات براون">بيتزا خضروات براون</option>
 <option value="دجاج بافلو مع بطاطا ويجز">دجاج بافلو مع بطاطا ويجز</option>
@@ -1806,7 +1806,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new2-snack">
+      <select class="form-select custom-select" id="n3-snack">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="بسبوسة لوتس">بسبوسة لوتس</option>
 <option value="ريد فيلفت">ريد فيلفت</option>
@@ -1836,7 +1836,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new2-salad">
+      <select class="form-select custom-select" id="n3-salad">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="سلطة خضراء">سلطة خضراء</option>
 <option value="روب بالخيار">روب بالخيار</option>
@@ -1861,7 +1861,7 @@
                                                   </div>
                                         </div>
                                          <div class="select">
-                                                <button class="button-select"onclick="submit_new2()">select</button>
+                                                <button class="button-select"onclick="n3()">select</button>
                                             </div>
                                     <div id='subsection-856' class='box-info'>
                                         <div class='head'>
@@ -1874,7 +1874,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new3-break">
+      <select class="form-select custom-select" id="n4-break">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="ميكس فيتا طماطم وخيار">ميكس فيتا طماطم وخيار</option>
 <option value="فول بالطحينة">فول بالطحينة</option>
@@ -1904,7 +1904,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new3-lanch">
+      <select class="form-select custom-select" id="n4-lanch">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value=" توسكاني الدجاج مع باستا وايت صوص ">توسكاني الدجاج مع باستا وايت صوص</option>
 <option value="بشاميل لحم">  بشاميل لحم</option>
@@ -1934,7 +1934,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new3-dinner">
+      <select class="form-select custom-select" id="n4-dinner">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="ساندوتش تشيكن فيليه">ساندوتش تشيكن فيليه</option>
 <option value="راب كبدة">راب كبدة</option>
@@ -1964,7 +1964,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new3-snack">
+      <select class="form-select custom-select" id="n4-snack">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="جيلي فواكه">جيلي فواكه</option>
 <option value="كنافة تركية">كنافة تركية</option>
@@ -1994,7 +1994,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new3-salad">
+      <select class="form-select custom-select" id="n4-salad">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="تبولة تركية">تبولة تركية</option>
 <option value="سلطة ناتشوز">سلطة ناتشوز</option>
@@ -2019,7 +2019,7 @@
                                                     
                                              </div>
                                          <div class="select">
-                                                <button class="button-select"onclick="submit_new3()">select</button>
+                                                <button class="button-select"onclick="n4()">select</button>
                                             </div>
                                     <div id='subsection-856' class='box-info'>
                                         <div class='head'>
@@ -2032,7 +2032,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new4-break">
+      <select class="form-select custom-select" id="n5-break">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="ساندوتش مارتديلا (لحم / دجاج)">ساندوتش مارتديلا (لحم / دجاج)</option>
 <option value="لبنة بالشمندر">لبنة بالشمندر</option>
@@ -2062,7 +2062,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new4-lanch">
+      <select class="form-select custom-select" id="n5-lanch">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="كفتة لحم بصوص البصل ودبس الرمان">كفتة لحم بصوص البصل ودبس الرمان </option>
 <option value="كبسة دجاج بالخضروات">كبسة دجاج بالخضروات</option>
@@ -2092,7 +2092,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new4-dinner">
+      <select class="form-select custom-select" id="n5-dinner">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="مسقعة باذنجان">مسقعة باذنجان</option>
 <option value="فطاير شاورما دجاج">فطاير شاورما دجاج</option>
@@ -2122,7 +2122,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new4-snack">
+      <select class="form-select custom-select" id="n5-snack">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="حلو الأوريو">حلو الأوريو</option>
 <option value="أم علي">أم علي</option>
@@ -2152,7 +2152,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new4-salad">
+      <select class="form-select custom-select" id="n5-salad">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="سلطة يوناني">سلطة يوناني</option>
 <option value="بابا غنوج">بابا غنوج</option>
@@ -2176,7 +2176,7 @@
 </div> 
                                                    </div>
                                          <div class="select">
-                                                <button class="button-select"onclick="submit_new4()">select</button>
+                                                <button class="button-select"onclick="n5()">select</button>
                                             </div>
                                     <div id='subsection-856' class='box-info'>
                                         <div class='head'>
@@ -2189,7 +2189,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new5-break">
+      <select class="form-select custom-select" id="n6-break">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="صاج زهرة بالخلطة الكرسبي">صاج زهرة بالخلطة الكرسبي</option>
 <option value="مناقيش لبنة وزعتر">مناقيش لبنة وزعتر</option>
@@ -2219,7 +2219,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new5-lanch">
+      <select class="form-select custom-select" id="n6-lanch">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="دجاج مشوي بالبابريكا المدخنة مع عيش">دجاج مشوي بالبابريكا المدخنة مع عيش</option>
 <option value="سمك محشي بالبصل مع عيش بني">سمك محشي بالبصل مع عيش بني</option>
@@ -2249,7 +2249,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new5-dinner">
+      <select class="form-select custom-select" id="n6-dinner">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="كباب دجاج مع بطاطا مشوية">كباب دجاج مع بطاطا مشوية</option>
 <option value="دجاج تندوري">دجاج تندوري</option>
@@ -2279,7 +2279,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new5-snack">
+      <select class="form-select custom-select" id="n6-snack">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="مهلبية بجوز الهند">مهلبية بجوز الهند</option>
 <option value="مافن كيك">مافن كيك</option>
@@ -2309,7 +2309,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new5-salad">
+      <select class="form-select custom-select" id="n6-salad">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="سلطة بقوليات">سلطة بقوليات</option>
 <option value="تغميسة جزر وخيار">تغميسة جزر وخيار</option>
@@ -2333,7 +2333,7 @@
 </div>
                                                  </div>
                                          <div class="select">
-                                                <button class="button-select"onclick="submit_new5()">select</button>
+                                                <button class="button-select"onclick="n6()">select</button>
                                             </div>
                                     <div id='subsection-856' class='box-info'>
                                         <div class='head'>
@@ -2346,7 +2346,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new6-break">
+      <select class="form-select custom-select" id="n7-break">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="صاج زهرة بالخلطة الكرسبي">صاج زهرة بالخلطة الكرسبي</option>
 <option value="مناقيش لبنة وزعتر">مناقيش لبنة وزعتر</option>
@@ -2376,7 +2376,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new6-lanch">
+      <select class="form-select custom-select" id="n7-lanch">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="دجاج مشوي بالبابريكا المدخنة مع عيش">دجاج مشوي بالبابريكا المدخنة مع عيش</option>
 <option value="سمك محشي بالبصل مع عيش بني">سمك محشي بالبصل مع عيش بني</option>
@@ -2406,7 +2406,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new6-dinner">
+      <select class="form-select custom-select" id="n7-dinner">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="برجر دجاج مع بطاطا">برجر دجاج مع بطاطا</option>
 <option value="دجاج تندوري">دجاج تندوري</option>
@@ -2436,7 +2436,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new6-snack">
+      <select class="form-select custom-select" id="n7-snack">
         <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="مهلبية بجوز الهند">مهلبية بجوز الهند</option>
 <option value="مافن كيك">مافن كيك</option>
@@ -2466,7 +2466,7 @@
                                                         <div class="container mt-3">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-6">
-      <select class="form-select custom-select" id="new6-salad">
+      <select class="form-select custom-select" id="n7-salad">
        <option value="0" selected disabled>اختر الوجبة </option>                                                        
 <option value="سلطة بقوليات">سلطة بقوليات</option>
 <option value="تغميسة جزر وخيار">تغميسة جزر وخيار</option>
@@ -2490,9 +2490,9 @@
 </div>
                                                      </div>
                                          <div class="select">
-                                                <button class="button-select"onclick="submit_new6()">select</button>
+                                                <button class="button-select"onclick="n7()">select</button>
                                             </div>
-                                    <!-- <div id='subsection-857' class='box-info'>
+                                     <div id='subsection-857' class='box-info'>
                                         <div class='head'>
                                            <h4 class="mb-2 ">منيو الكيتو دايت</h4>
                                            <h3 class="mb-0">      Saturday – السبت</h3>
@@ -4356,7 +4356,7 @@
                                                     </div>
                                         <div class="select">
                                                 <button class="button-select"onclick="sugar7()">select</button>
-                                            </div> -->
+                                            </div> 
                                                     </a>
 </section>       
         <div id="toTop"></div><!-- Back to top button --> 
