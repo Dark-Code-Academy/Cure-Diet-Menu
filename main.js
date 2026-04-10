@@ -387,6 +387,8 @@ function submit_new6() {
 
 
 
+
+
 function n1() {
     var phone_numper = "96566473580";
 
@@ -401,7 +403,7 @@ function n1() {
         setTimeout(() => { nameField.style.border = ""; }, 2000);
         return;
     }
-    var day = "السبت";
+    var day = "الاحد";
     var breakf = document.getElementById("n1-break").value;
     var lanch = document.getElementById("n1-lanch").value;
     var dinner = document.getElementById("n1-dinner").value;
@@ -411,8 +413,9 @@ function n1() {
     var now = new Date();
     var dateTime = now.toLocaleString();
 
+    // 📦 حفظ في localStorage
     var order = {
-        day : day,
+        day: day,
         date: dateTime,
         name: name,
         breakf: breakf,
@@ -426,6 +429,7 @@ function n1() {
     orders.push(order);
     localStorage.setItem("orders", JSON.stringify(orders));
 
+    // 📤 إرسال واتساب
     var message =
         "( يوم السبت )\n" +
         "الاسم : " + name + "\n" +
@@ -436,9 +440,8 @@ function n1() {
         "السلطة : " + salad;
 
     var url = "https://wa.me/" + phone_numper + "?text=" + encodeURIComponent(message);
-    window.open(url, "_blank");
+    window.open(url, "_blank").focus();
 }
-
 function n2() {
     var phone_numper = "96566473580";
 
@@ -458,7 +461,7 @@ function n2() {
     var lanch = document.getElementById("n2-lanch").value;
     var dinner = document.getElementById("n2-dinner").value;
     var snack = document.getElementById("n2-snack").value;
-    var salad = document.getElementById("new1-salad").value;
+    var salad = document.getElementById("n2-salad").value;
 
     var now = new Date();
     var dateTime = now.toLocaleString();
