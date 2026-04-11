@@ -168,48 +168,73 @@ button.delete-btn:hover {
 </div>
 
 <script>
-function loadOrders() {
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    var table = document.getElementById("ordersTable");
-    table.innerHTML = "";
+const API_URL = "https://script.google.com/macros/s/AKfycbxNkkrGQAN_9m0pCLTDM5XmSb-uKArbV3HRp5LExjEnyIwFEIRI4TpGNhupf5qnMJTa/exec";
 
-    orders.forEach((order, index) => {
-        var row = `
-            <tr>
-                <td>${order.day}</td>
-                <td>${order.date}</td>
-                <td>${order.name}</td>
-                <td>${order.breakf}</td>
-                <td>${order.lanch}</td>
-                <td>${order.dinner}</td>
-                <td>${order.snack}</td>
-                <td>${order.salad}</td>
-                <td>
-                    <button class="delete-btn" onclick="deleteOrder(${index})">🗑</button>
-                </td>
-            </tr>
-        `;
-        table.innerHTML += row;
-    });
+function loadOrders() {
+    fetch(API_URL)
+        .then(res => res.json())
+        .then(orders => {
+            var table = document.getElementById("ordersTable");
+            table.innerHTML = "";
+
+            orders.forEach((order) => {
+                var row = `
+                    <tr>
+                        <td>${order.day}</td>
+                        <td>${order.date}</td>
+                        <td>${order.name}</td>
+                        <td>${order.breakf}</td>
+                        <td>${order.lanch}</td>
+                        <td>${order.dinner}</td>
+                        <td>${order.snack}</td>
+                        <td>${order.salad}</td>
+                        <td>
+                            <button class="btn btn-sm btn-danger"
+                                onclick="deleteOrder(${order.id})">
+                                🗑
+                            </button>
+                        </td>
+                    </tr>
+                `;
+                table.innerHTML += row;
+            });
+        });
 }
 
-function deleteOrder(index) {
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+
+
+function deleteOrder(rowId) {
     if (confirm("هل أنت متأكد من حذف الطلب؟")) {
-        orders.splice(index, 1);
-        localStorage.setItem("orders", JSON.stringify(orders));
-        loadOrders();
+
+        fetch(API_URL, {
+            method: "POST",
+            body: JSON.stringify({
+                action: "deleteOne",
+                row: rowId
+            })
+        }).then(() => {
+            loadOrders();
+        });
     }
 }
 
 function deleteAllOrders() {
     if (confirm("هل أنت متأكد من حذف كل الطلبات؟")) {
-        localStorage.removeItem("orders");
-        loadOrders();
+
+        fetch(API_URL, {
+            method: "POST",
+            body: JSON.stringify({
+                action: "deleteAll"
+            })
+        }).then(() => {
+            loadOrders();
+        });
     }
 }
 
-document.getElementById("deleteAllBtn").addEventListener("click", deleteAllOrders);
+document.getElementById("deleteAllBtn")
+    .addEventListener("click", deleteAllOrders);
 
 loadOrders();
 </script>
