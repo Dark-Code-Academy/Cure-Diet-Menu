@@ -773,7 +773,8 @@ function n6() {
     var dateTime = now.toLocaleString();
 
     var order = {
-        date: day,
+         day: day,
+        date: dateTime,
         name: name,
         breakf: breakf,
         lanch: lanch,
