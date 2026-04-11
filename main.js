@@ -39,10 +39,17 @@ function submit() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxNkkrGQAN_9m0pCLTDM5XmSb-uKArbV3HRp5LExjEnyIwFEIRI4TpGNhupf5qnMJTa/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     var message =
         "( يوم السبت )\n" +
@@ -91,10 +98,17 @@ function submit_new1() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 إرسال واتساب
     var message =
@@ -144,11 +158,17 @@ function submit_new2() {
         dinner: dinner,
         snack: snack,
         salad: salad
-    };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+    };fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 إرسال واتساب
     var message =
@@ -199,10 +219,17 @@ function submit_new3() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -253,10 +280,17 @@ function submit_new4() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -312,10 +346,17 @@ function submit_new5() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     var message =
         "( يوم الخميس )\n" +
@@ -366,10 +407,17 @@ function submit_new6() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -424,10 +472,17 @@ function n1() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 إرسال واتساب
     var message =
@@ -477,10 +532,17 @@ function n2() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 إرسال واتساب
     var message =
@@ -531,10 +593,17 @@ function n3() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 إرسال واتساب
     var message =
@@ -585,10 +654,17 @@ function n4() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -639,10 +715,17 @@ function n5() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -698,10 +781,17 @@ function n6() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     var message =
         "( يوم الخميس )\n" +
@@ -752,10 +842,17 @@ function n7() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -810,10 +907,17 @@ function keto1() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message = 
@@ -874,10 +978,17 @@ function keto2() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -940,10 +1051,17 @@ function keto3() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -1006,10 +1124,17 @@ function keto4() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -1071,10 +1196,17 @@ function keto5() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -1136,10 +1268,17 @@ function keto6() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -1201,10 +1340,17 @@ function sugar1() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -1266,10 +1412,17 @@ function sugar2() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -1331,10 +1484,17 @@ function sugar3() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -1396,10 +1556,17 @@ function sugar4() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -1461,10 +1628,17 @@ function sugar5() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -1526,10 +1700,17 @@ function sugar6() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
@@ -1591,10 +1772,17 @@ function sugar7() {
         snack: snack,
         salad: salad
     };
-
-    var orders = JSON.parse(localStorage.getItem("orders")) || [];
-    orders.push(order);
-    localStorage.setItem("orders", JSON.stringify(orders));
+fetch("https://script.google.com/macros/s/AKfycbxbFIVYyihcGRUZA2jv5Ofz5uy5nH-DtwsOG6Eh3pHEcA5kMDH6Naahx-KLYe5d3o9g/exec", {
+    method: "POST",
+    body: JSON.stringify(order)
+})
+.then(res => res.text())
+.then(data => {
+    console.log("Saved to Google Sheets:", data);
+})
+.catch(err => {
+    console.error("Error:", err);
+});
 
     // 📤 رسالة واتساب
     var message =
