@@ -26,46 +26,54 @@ window.onload = () => {
 // قراءة البيانات
 //=========================
 
+//=========================
+// قراءة التقرير
+//=========================
+
 async function loadReport() {
 
     const response = await fetch(API_URL);
-
     const orders = await response.json();
 
-    const selectedDate =
-        document.getElementById("reportDate").value;
+    const selectedDate = document.getElementById("reportDate").value;
 
-    //----------------------------------------
-    // فلترة حسب التاريخ
-    //----------------------------------------
+    // استخراج اسم اليوم من التاريخ المختار
+    const dayNames = [
+        "الاحد",
+        "الاثنين",
+        "الثلاثاء",
+        "الاربعاء",
+        "الخميس",
+        "الجمعة",
+        "السبت"
+    ];
 
+    const selectedDay =
+        dayNames[new Date(selectedDate).getDay()];
+
+    // عرض عنوان التقرير
+    document.getElementById("reportTitle").innerHTML =
+        "📅 تقرير يوم " + selectedDay;
+
+    // فلترة حسب اسم اليوم
     const filtered = orders.filter(order => {
 
-        const orderDate = convertDate(order.date);
+        if (!order.day) return false;
 
-        return orderDate == selectedDate;
+        return order.day.trim() === selectedDay;
 
     });
-
-    //----------------------------------------
 
     document.getElementById("totalOrders").innerText =
         filtered.length;
 
-    //----------------------------------------
-
     makeReport(filtered,"breakf","breakfastTable","breakfastCount");
-
     makeReport(filtered,"lanch","lunchTable","lunchCount");
-
     makeReport(filtered,"dinner","dinnerTable","dinnerCount");
-
     makeReport(filtered,"snack","snackTable","snackCount");
-
     makeReport(filtered,"salad","saladTable","saladCount");
 
 }
-
 
 //=========================
 // تحويل التاريخ
