@@ -250,47 +250,67 @@ input[type=date]{
     <h2 class="text-center mb-4">
         📊 تقرير الوجبات اليومية
     </h2>
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="alert alert-primary text-center shadow-sm">
 
+            <h4 id="reportTitle" class="mb-0">
+                تقرير اليوم
+            </h4>
+
+        </div>
+    </div>
+</div>
     <div class="row mb-4">
 
-        <div class="col-md-4 mb-2">
-            <input type="date"
-                   id="reportDate"
-                   class="form-control">
-        </div>
+    <div class="col-md-4 mb-2">
 
-        <div class="col-md-2 mb-2">
+        <label class="mb-2 fw-bold">
+            اختر تاريخ التقرير
+        </label>
 
-            <button class="btn btn-primary w-100"
-                    onclick="loadReport()">
+        <input
+            type="date"
+            id="reportDate"
+            class="form-control">
 
-                عرض التقرير
+    </div>
 
-            </button>
+    <div class="col-md-2 mb-2 d-flex align-items-end">
 
-        </div>
+        <button
+            class="btn btn-primary w-100"
+            onclick="loadReport()">
 
-        <div class="col-md-2 mb-2">
+            عرض التقرير
 
-            <button class="btn btn-success w-100"
-                    onclick="window.print()">
+        </button>
 
-                🖨️ طباعة
+    </div>
 
-            </button>
+    <div class="col-md-2 mb-2 d-flex align-items-end">
 
-        </div>
+        <button
+            class="btn btn-success w-100"
+            onclick="window.print()">
 
-        <div class="col-md-2 mb-2">
+            🖨️ طباعة
 
-            <button class="btn btn-warning w-100"
-                    onclick="loadReport()">
+        </button>
 
-                🔄 تحديث
+    </div>
 
-            </button>
+    <div class="col-md-2 mb-2 d-flex align-items-end">
 
-        </div>
+        <button
+            class="btn btn-warning w-100"
+            onclick="loadReport()">
+
+            🔄 تحديث
+
+        </button>
+
+    </div>
 
     </div>
 
